@@ -16,7 +16,7 @@ pytorch 2.0 도커 이미지를 활용합니다.
 
 저희 팀에서는 다음 명령어로 이미지를 run하였습니다.
 
-    docker run -itd --rm -p 8888:8888 -v /(our path):/root/share --gpus all --name ecg_docker --ipc=host  pytorch/pytorch:standard-2.0.0
+    docker run -itd --rm -p 8888:8888 -v /(our path):/root/share --gpus all --name ecg_docker --ipc=host  pytorch/pytorch:2.0.0-cuda11.7-cudnn8-devel
 
 다만, pytorch 2.0.0이 설치된 환경이면 큰 문제 없이 실행될 것으로 예상합니다.
 
